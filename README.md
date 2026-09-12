@@ -26,7 +26,6 @@ DDGL-Net contains three main components:
 1. **Disentangled Dual-Granularity Encoder (DDGE)**
    - Projects the fine- and coarse-grained inputs independently.
    - Applies sinusoidal positional encoding.
-   - Models intra-stock temporal dependencies and inter-stock cross-sectional dependencies with separate temporal and spatial multi-head attention.
    - Uses attention-based temporal aggregation to produce one representation per stock and stream.
 
 2. **Market-Adaptive Contextual Modulator (MACM)**
@@ -43,7 +42,7 @@ DDGL-Net contains three main components:
   <img src="figures/hr_moe.png" width="78%" alt="Static predictor and HR-MoE comparison">
 </p>
 
-For a trading date $\tau$, the model processes the entire valid stock cross-section together. This is important because the spatial attention layer learns dependencies between stocks within the same market snapshot.
+For a trading date $\tau$, the model processes the entire valid stock cross-section together. 
 
 ## What is included
 
